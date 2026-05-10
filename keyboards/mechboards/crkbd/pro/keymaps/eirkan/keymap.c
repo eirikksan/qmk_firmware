@@ -16,16 +16,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ),
 
   [1] = LAYOUT_split_3x6_3(
-    KC_TAB,  XXXXXXX, XXXXXXX, KC_UP,   XXXXXXX, XXXXXXX,                       NO_PLUS, KC_7, KC_8, KC_9, XXXXXXX, XXXXXXX,
-    KC_LSFT, XXXXXXX, KC_LEFT, KC_DOWN, KC_RIGHT, NO_BSLS,                      NO_MINS, KC_4, KC_5, KC_6, XXXXXXX, XXXXXXX,
-    KC_LCTL, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, NO_SLSH,                       LT(2,KC_0),KC_1, KC_2, KC_3, XXXXXXX, KC_DEL,
+    KC_TAB,  NO_PIPE, XXXXXXX, KC_UP,   XXXXXXX, XXXXXXX,                      XXXXXXX, KC_7, KC_8, KC_9, NO_PLUS, NO_BSLS,
+    KC_LSFT, XXXXXXX, KC_LEFT, KC_DOWN, KC_RIGHT,XXXXXXX,                      XXXXXXX, KC_4, KC_5, KC_6, NO_DIAE, NO_QUOT,
+    KC_LCTL, LT(2,NO_LABK), XXXXXXX, XXXXXXX, XXXXXXX, NO_SLSH,                KC_0,KC_1, KC_2, KC_3, LT(2,XXXXXXX), KC_DEL,
                                         KC_LGUI, _______, KC_SPC,      KC_ENT,  KC_RALT,   KC_LALT
 ),
 
 [2] = LAYOUT_split_3x6_3(
-  QK_BOOT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                       XXXXXXX, KC_F7, KC_F8, KC_F9, KC_F12, XXXXXXX,
-  RM_TOGG, RM_HUEU, RM_SATU, RM_VALU, XXXXXXX, XXXXXXX,                       XXXXXXX, KC_F4, KC_F5, KC_F6, KC_F11, XXXXXXX,
-  RM_NEXT, RM_HUED, RM_SATD, RM_VALD, XXXXXXX, XXXXXXX,                       _______, KC_F1, KC_F2, KC_F3, KC_F10, XXXXXXX,
+  QK_BOOT, XXXXXXX, XXXXXXX, KC_PGUP, XXXXXXX, RM_VALU,                       RM_SATU, KC_F7, KC_F8, KC_F9, KC_F12, KC_INSERT,
+  RM_TOGG, RM_HUEU, KC_HOME, KC_PGDN, KC_END, RM_VALD,                        RM_SATD, KC_F4, KC_F5, KC_F6, KC_F11, KC_PRINT_SCREEN,
+  RM_NEXT, RM_HUED, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                       _______, KC_F1, KC_F2, KC_F3, KC_F10, XXXXXXX,
                                       KC_LGUI, XXXXXXX, KC_SPC,      KC_ENT,  KC_RALT, KC_LALT
 )
 //   [3] = LAYOUT_split_3x6_3(
